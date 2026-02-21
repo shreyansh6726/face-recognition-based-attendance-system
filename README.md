@@ -1,99 +1,36 @@
-# Face Recognition Attendance System
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern, full-stack attendance management solution that replaces manual logs with automated facial identification. This project streamlines the process of tracking attendance by leveraging computer vision and a robust MERN architecture.
+## Getting Started
 
----
-
-## Key Features
-
-* **Facial Identification:** Automated recognition of users to log attendance.
-* **Real-time Tracking:** Instant updates to the attendance database upon successful recognition.
-* **Secure Dashboard:** Managed interface for viewing and exporting attendance logs.
-* **Seamless Integration:** Connected via MongoDB Atlas/Compass for persistent data storage.
-
----
-
-## Tech Stack
-
-* **Frontend:** React.js, Tailwind CSS (deployed on **Vercel**)
-* **Backend:** Node.js, Express.js (deployed on **Render**)
-* **Database:** MongoDB (managed via **MongoDB Compass**)
-* **Recognition:** [Mention library here, e.g., Face-api.js or OpenCV]
-
----
-
-## Local Development
-
-Follow these steps to get the project running on your local machine:
-
-### 1. Prerequisites
-
-* Node.js installed
-* MongoDB Compass installed and running
-
-### 2. Backend Setup
+First, run the development server:
 
 ```bash
-cd backend
-npm install
-
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-* Create a `.env` file in the `backend` folder:
-```env
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/your_db_name
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-* Start the server:
-```bash
-npm run dev  # Runs on http://localhost:5000
+## Learn More
 
-```
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### 3. Frontend Setup
+## Deploy on Vercel
 
-```bash
-cd frontend
-npm install
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-```
-
-* Start the React app:
-```bash
-npm start  # Runs on http://localhost:3000
-
-```
-
-
-
----
-
-## Deployment Configuration
-
-| Component | Platform | Status |
-| --- | --- | --- |
-| **Frontend** | Vercel | Production Ready |
-| **Backend** | Render | Production Ready |
-| **Database** | MongoDB | Cloud/Compass Managed |
-
-> **Note:** Ensure the `cors` configuration in your Express app allows requests from your Vercel domain to prevent communication errors between the frontend and backend.
-
----
-
-## System Architecture
-
-The system works by capturing a live feed from the frontend, processing the image data through the backend recognition logic, and verifying the identity against stored profiles in the MongoDB database.
-
----
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page].
-
----
-ould you like me to help you write the `deployment` section or specific `CORS` configuration code for your Express backend to ensure Vercel can talk to Render?**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
