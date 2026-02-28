@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aether",
   description: "Aether - Face Recognition Based Attendance System",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
